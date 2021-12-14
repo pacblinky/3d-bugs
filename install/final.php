@@ -40,7 +40,7 @@ require_once __DIR__."./handler.php";
         if($_SESSION["step2"] === true && $_SESSION["step3"] === true)
         {
         echo "<p class='card-text'><span class='fw-bold'>reports, comments, attachments and logs</span> tables will be created at <span class='fw-bold'>".$_SESSION["db_name"]."</span> database </p>";
-        echo "<p class='card-text'><span class='fw-bold'>config.php</span> file will be created at the application directory, you can change the settings from the file or delete the file to uninstall the application</p>";
+        echo "<p class='card-text'><span class='fw-bold'>config.php</span> file will be created at the application directory in classes folder, you can change the settings from the file or delete the file to uninstall the application</p>";
         echo "<p class='card-text fw-bold text-primary'>Are you sure you want to proccess?</p>";
         echo "<form action='./final.php' method='post' id='form' role='form'>";
         echo "<button type='submit' name='final' class='btn btn-success' form='form'>Install</button>";

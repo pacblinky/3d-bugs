@@ -1,5 +1,5 @@
 <?php
-if (file_exists(__DIR__ . "./../config.php")) {
+if (file_exists(__DIR__ . "./../classes/Config.php")) {
   die(header("Location: ./../"));
 }
 ?>

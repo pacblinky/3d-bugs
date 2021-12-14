@@ -111,7 +111,7 @@ function install($db_host, $db_username, $db_password, $db_name, $XF_KEY, $XF_UR
   } catch (PDOException $e) {
     $error = $e->getMessage();
   }
-  $config_file = fopen("./../config.php", "w");
+  $config_file = fopen("./../classes/Config.php", "w");
   $text = ("<?php\nclass Config\n{\nprotected static \$db_host = \"" . $db_host . "\";\n" . "protected static \$db_username = \"" . $db_username . "\";\n" . "protected static \$db_password = \"" . $db_password . "\";\n" . "protected static \$db_name = \"" . $db_name . "\";\n" . "protected static \$XF_API_KEY = \"" . $XF_KEY . "\";\n" . "protected static \$XF_API_URL = \"" . $XF_URL . "\";\n" . "protected static \$XF_SQLusername = \"" . $XF_username . "\";\n" . "protected static \$XF_SQLpassword = \"" . $XF_password . "\";\n" . "protected static \$XF_SQLdatabase = \"" . $XF_database . "\";\n" . "}\n?>");
   fwrite($config_file, $text);
   return true;

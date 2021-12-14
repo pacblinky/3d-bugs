@@ -1,5 +1,5 @@
 <?php
-if (!file_exists("config.php")) {
+if (!file_exists("./classes/Config.php")) {
   exit(header("Location: ./install/"));
 }
 session_start();
