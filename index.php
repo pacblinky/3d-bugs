@@ -79,7 +79,7 @@ $reports = Report::getReports(0);
           <button type="button" class="btn-close bg-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p style="display: none;" class="text-danger fw-bold text-center" id="message"></p>
+          <p style="display: none" class="text-danger fw-bold text-center" id="message"></p>
           <form id="edit_report" method="post">
             <div class="mb-3">
               <label for="map_name" class="form-label">Map name</label>
